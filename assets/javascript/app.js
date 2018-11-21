@@ -1,11 +1,11 @@
 // Globals
 var config = {
-	apiKey: "AIzaSyBBoyZvc0BR5QIoIoBGD7wepn5wHsZHiNs",
-	authDomain: "cool-f0a13.firebaseapp.com",
-	databaseURL: "https://cool-f0a13.firebaseio.com",
-	projectId: "cool-f0a13",
-	storageBucket: "cool-f0a13.appspot.com",
-	messagingSenderId: "633106733016"
+    apiKey: "AIzaSyCbEsmlUQ5hAgB9QJsj4BU63mclrGs9ahs",
+    authDomain: "garrettsdemo-fd9a8.firebaseapp.com",
+    databaseURL: "https://garrettsdemo-fd9a8.firebaseio.com",
+    projectId: "garrettsdemo-fd9a8",
+    storageBucket: "garrettsdemo-fd9a8.appspot.com",
+    messagingSenderId: "720601051014"
 };
 
 firebase.initializeApp(config);
