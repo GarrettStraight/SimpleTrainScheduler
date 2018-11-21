@@ -1,0 +1,31 @@
+body {
+	background-color: #771122;
+}
+
+.container {
+	background-color: #580512;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#trainName {
+	text-align: left;
+
+}
+
+.jumbotron {
+	background-color: #B53D50;
+}
+
+.panel-heading {
+	background-color: #B53D50;
+}
+
+.data {
+	border-bottom: 1px solid black;
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	
+}

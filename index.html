@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Scheduler</title>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:400,400i" rel="stylesheet">
+	<link rel= "stylesheet" type= "text/css" href="assets/style.css" > 
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+	
+	
+
+</head>
+
+<body>
+	<div class="container">
+
+
+	<div class= "row">
+    <div class= "col-lg-12">
+      <div class= "jumbotron">
+        <h1> Train Scheduler </h1>
+          </div>  
+
+      <div class= "panel">
+        <div class="panel-heading desc">
+            <h3 class="panel-title text-center">Current Train Scheduler</h3>
+          </div>
+          
+        
+          <div class= "row headers"> 
+           <div class= "col-lg-2"> <b> Train Name </b></div>
+           <div class= "col-lg-2"> <b> Destination </b></div>
+           <div class= "col-lg-2"> <b> Frequency(min)</b></div>
+           <div class= "col-lg-2"> <b> Next Arrival </b></div>
+           <div class= "col-lg-2"> <b> Minutes Away </b></div>
+           </div>
+              <div class= "row trainData">
+                <div class= "col-lg-2 " id="trainName"> </div>
+                <div class= "col-lg-2 " id="trainDestination">  </div>
+                <div class= "col-lg-2 " id="trainFrequency">  </div>
+                <div class= "col-lg-2 " id="trainArrival">  </div>
+                <div class= "col-lg-2 " id="trainMinutesAway">  </div>
+              </div>
+
+
+      </div>
+    </div>
+  </div>  
+ 
+  <div class= "row">
+  <div class="col-md-3">
+        <div class="panel">
+          <div class="panel-heading desc ">
+            <h3 class="panel-title text-center">Add Train</h3>
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="name">New Train Name </label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Soul Train">
+              </div>
+              <div class="form-group">
+                <label for="role">Destination </label>
+                <input type="text" class="form-control" id="destinationInput" placeholder="Paris">
+              </div>
+              <div class="form-group">
+                <label class="startDate" for="start">Start Time</label><label class="milTime">&nbsp;</label>
+                <input type="time" class="form-control" id="startTimeInput" placeholder="00:00">
+              </div>
+              <div class="form-group">
+                <label for="newTrainMinutesAway">Frequency - (mins) </label>
+                <input type="number" class="form-control" id="frequencyInput" placeholder="15">
+              </div>
+              <button type="submit" class="btn btn-default center-block" id="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+    </div>
+  
+ </div>
+
+
+
+</body>
+<script type= "text/javascript" src="assets/scheduler.js"> </script>
+</html>
