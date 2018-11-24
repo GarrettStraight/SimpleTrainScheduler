@@ -1,10 +1,13 @@
 body {
-	background-color: #771122;
+	background-image: url("../images/littleG404.png");
+	background-repeat: repeat;
 }
 
 .container {
-	background-color: #580512;
+	background-color: #1e2229;
 	font-family: 'Josefin Sans', sans-serif;
+	border: 2px solid rgb(97, 89, 105);
+    border-radius: 25px;
 }
 
 #trainName {
@@ -13,11 +16,14 @@ body {
 }
 
 .jumbotron {
-	background-color: #B53D50;
+
+	background-color: rgb(52, 52, 54);
+	margin-top:10px;
+	
 }
 
 .panel-heading {
-	background-color: #B53D50;
+	background-color: rgb(161, 162, 165);
 }
 
 .data {
