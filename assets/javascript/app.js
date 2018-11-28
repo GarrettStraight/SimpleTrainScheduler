@@ -85,7 +85,7 @@ database.ref().on("child_added", function(snapshot) {
       $("#trainFrequency").append(newFreq);
       $("#trainMinutesAway").append(newMinutes);
 
-      var next = currentTime + parseInt(theFutureTime);
+      var next = currentTime + parseint(theFutureTime);
 
       console.log(next);
       console.log("The Current Time is: " + currentTime);
