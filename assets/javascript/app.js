@@ -66,7 +66,7 @@ database.ref().on("child_added", function(snapshot) {
       // var lastObj = sv[lastKey]
       
       
-      theFutureTime = moment().hour('0').minute(sv.frequency).format("HH:mm");
+      theFutureTime = moment().hour('0').minute(sv.frequency).format("hh:mm");
 
       console.log("The Future Var: " + theFutureTime);  // prints 16:44
       
