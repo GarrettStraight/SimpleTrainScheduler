@@ -89,7 +89,7 @@ database.ref().on("child_added", function(snapshot) {
 
       console.log(next);
       console.log("The Current Time is: " + currentTime);
-     // next = moment().hour('0').minute(sv.frequency).format("HH:mm");
+     next = moment().hour('0').minute(sv.frequency).format("HH:mm");
      console.log(moment(next).format("hh:mm"));
      
 
