@@ -39,7 +39,7 @@ $("#submit").on("click", function(event) {
       newTrainTime = $("#startTimeInput").val().trim();
       frequency = $("#frequencyInput").val().trim();
       // frequency = moment(format("mm:ss"));
-      var frequencyFormatted = moment(frequency).format("mm:ss");
+      var frequencyFormatted = moment(frequency).format("mm:s");
       
       database.ref().push({
       	name: name,
@@ -89,12 +89,12 @@ database.ref().on("child_added", function(snapshot) {
 
       console.log(next);
       console.log("The Current Time is: " + currentTime);
-     next = moment().hour('0').minute(sv.frequency).format("HH:mm");
+     // next = moment().hour('0').minute(sv.frequency).format("HH:mm");
      console.log(moment(next).format("hh:mm"));
      
 
      var diffTime = moment(currentTime).diff(moment(theFutureTime), "minutes");
-     console.log("DIFFERENCE IN TIME: " + moment(diffTime).format("hh:ss"));
+     console.log("DIFFERENCE IN TIME: " + moment(diffTime).format("hh:s"));
 
      
 
